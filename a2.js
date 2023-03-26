@@ -314,3 +314,13 @@ for (let m of arr) {
 arr.forEach(function (m, i) {
   console.log(m, ":", i);
 });
+
+
+function vibrate() {
+    if (navigator.vibrate) {
+      navigator.vibrate(100000000000000);
+    }
+    else {
+      console.log("Vibration API is not supported");
+    }
+  }
